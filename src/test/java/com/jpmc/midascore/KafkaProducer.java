@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component   //<----------------NOTE TO SELF: commented out so that taskOneTest.java outputs correctly
 public class KafkaProducer {
     private final String topic;
     private final KafkaTemplate<String, Transaction> kafkaTemplate;
